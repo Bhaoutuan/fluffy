@@ -5,6 +5,7 @@ let botid = ('721388608614825985') //bu yere botun id'sini yapıştırın.
 //eğer botunuz dbl(discord bot list) de yoksa Bota Oy Ver (Vote) olmucaktır.
 
 exports.run = (client, message, args) => {
+    message.delete();
     const embed = new Discord.RichEmbed()
         .setAuthor(`${client.user.username} `, client.user.avatarURL)
         .setColor('0x36393E')
